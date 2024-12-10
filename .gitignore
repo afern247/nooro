@@ -1,0 +1,11 @@
+# Simple gitignore for this exercise
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.build/
+
+## User settings
+xcuserdata/

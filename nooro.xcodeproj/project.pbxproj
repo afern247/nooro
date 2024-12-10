@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69CD4F9F2D08ADD100478B98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CD4F982D08ADD100478B98 /* Preview Assets.xcassets */; };
+		69CD4FA02D08ADD100478B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CD4F9A2D08ADD100478B98 /* Assets.xcassets */; };
+		69CD4FA22D08ADD100478B98 /* nooroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4F9D2D08ADD100478B98 /* nooroApp.swift */; };
+		69CD4FA82D08AE9500478B98 /* WeatherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FA72D08AE9500478B98 /* WeatherHomeView.swift */; };
+		69CD4FB02D08B10400478B98 /* NColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FAF2D08B10400478B98 /* NColor.swift */; };
+		69CD4FB22D08B13300478B98 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FB12D08B13300478B98 /* Color+Theme.swift */; };
+		69CD4FB42D08B28800478B98 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FB32D08B28800478B98 /* Color+Extension.swift */; };
+		69CD4FB62D08B60B00478B98 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FB52D08B60B00478B98 /* SearchViewModel.swift */; };
+		69CD4FB92D08B77100478B98 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FB82D08B77100478B98 /* Cache.swift */; };
+		69CD4FBB2D08B97700478B98 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FBA2D08B97700478B98 /* WeatherData.swift */; };
+		69CD4FBD2D08BAE400478B98 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FBC2D08BAE400478B98 /* WeatherService.swift */; };
+		69CD4FC02D08EE5B00478B98 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FBF2D08EE5B00478B98 /* WeatherDetailView.swift */; };
+		69CD4FC42D08F58E00478B98 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD4FC32D08F58E00478B98 /* SessionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69CD4F7C2D08ADB700478B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CD4F622D08ADB600478B98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CD4F692D08ADB600478B98;
+			remoteInfo = nooro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69CD4F6A2D08ADB600478B98 /* nooro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nooro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CD4F7B2D08ADB700478B98 /* nooroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nooroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CD4F982D08ADD100478B98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69CD4F9A2D08ADD100478B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69CD4F9C2D08ADD100478B98 /* nooro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nooro.entitlements; sourceTree = "<group>"; };
+		69CD4F9D2D08ADD100478B98 /* nooroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nooroApp.swift; sourceTree = "<group>"; };
+		69CD4FA72D08AE9500478B98 /* WeatherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeView.swift; sourceTree = "<group>"; };
+		69CD4FAF2D08B10400478B98 /* NColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NColor.swift; sourceTree = "<group>"; };
+		69CD4FB12D08B13300478B98 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		69CD4FB32D08B28800478B98 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		69CD4FB52D08B60B00478B98 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		69CD4FB82D08B77100478B98 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		69CD4FBA2D08B97700478B98 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		69CD4FBC2D08BAE400478B98 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		69CD4FBF2D08EE5B00478B98 /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
+		69CD4FC32D08F58E00478B98 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		69CD4FD12D08F9F300478B98 /* Exceptions for "nooroTests" folder in "nooro" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MockData.swift,
+			);
+			target = 69CD4F692D08ADB600478B98 /* nooro */;
+		};
+		69CD4FD22D08FA6100478B98 /* Exceptions for "nooroTests" folder in "nooroTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MockData.swift,
+			);
+			target = 69CD4F7A2D08ADB700478B98 /* nooroTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		69CD4F7E2D08ADB700478B98 /* nooroTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				69CD4FD12D08F9F300478B98 /* Exceptions for "nooroTests" folder in "nooro" target */,
+				69CD4FD22D08FA6100478B98 /* Exceptions for "nooroTests" folder in "nooroTests" target */,
+			);
+			path = nooroTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69CD4F672D08ADB600478B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CD4F782D08ADB700478B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69CD4F612D08ADB600478B98 = {
+			isa = PBXGroup;
+			children = (
+				69CD4F9E2D08ADD100478B98 /* nooro */,
+				69CD4F7E2D08ADB700478B98 /* nooroTests */,
+				69CD4F6B2D08ADB600478B98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69CD4F6B2D08ADB600478B98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4F6A2D08ADB600478B98 /* nooro.app */,
+				69CD4F7B2D08ADB700478B98 /* nooroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69CD4F992D08ADD100478B98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4F982D08ADD100478B98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69CD4F9E2D08ADD100478B98 /* nooro */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4F9D2D08ADD100478B98 /* nooroApp.swift */,
+				69CD4FA32D08ADFC00478B98 /* Screens */,
+				69CD4FB72D08B76400478B98 /* Utils */,
+				69CD4FAA2D08AECA00478B98 /* DesignSystem */,
+				69CD4F9A2D08ADD100478B98 /* Assets.xcassets */,
+				69CD4F9C2D08ADD100478B98 /* nooro.entitlements */,
+				69CD4F992D08ADD100478B98 /* Preview Content */,
+			);
+			path = nooro;
+			sourceTree = "<group>";
+		};
+		69CD4FA32D08ADFC00478B98 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FC32D08F58E00478B98 /* SessionView.swift */,
+				69CD4FA92D08AEB500478B98 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		69CD4FA42D08AE1000478B98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FA72D08AE9500478B98 /* WeatherHomeView.swift */,
+				69CD4FBF2D08EE5B00478B98 /* WeatherDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69CD4FA52D08AE1500478B98 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FB52D08B60B00478B98 /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		69CD4FA62D08AE2200478B98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FBA2D08B97700478B98 /* WeatherData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69CD4FA92D08AEB500478B98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FA42D08AE1000478B98 /* Views */,
+				69CD4FA52D08AE1500478B98 /* ViewModels */,
+				69CD4FA62D08AE2200478B98 /* Models */,
+				69CD4FBE2D08BBCE00478B98 /* Services */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69CD4FAA2D08AECA00478B98 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FAE2D08B0F600478B98 /* Color */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		69CD4FAE2D08B0F600478B98 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FAF2D08B10400478B98 /* NColor.swift */,
+				69CD4FB12D08B13300478B98 /* Color+Theme.swift */,
+				69CD4FB32D08B28800478B98 /* Color+Extension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		69CD4FB72D08B76400478B98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FB82D08B77100478B98 /* Cache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		69CD4FBE2D08BBCE00478B98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69CD4FBC2D08BAE400478B98 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69CD4F692D08ADB600478B98 /* nooro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CD4F8F2D08ADB700478B98 /* Build configuration list for PBXNativeTarget "nooro" */;
+			buildPhases = (
+				69CD4F662D08ADB600478B98 /* Sources */,
+				69CD4F672D08ADB600478B98 /* Frameworks */,
+				69CD4F682D08ADB600478B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nooro;
+			packageProductDependencies = (
+			);
+			productName = nooro;
+			productReference = 69CD4F6A2D08ADB600478B98 /* nooro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69CD4F7A2D08ADB700478B98 /* nooroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CD4F922D08ADB700478B98 /* Build configuration list for PBXNativeTarget "nooroTests" */;
+			buildPhases = (
+				69CD4F772D08ADB700478B98 /* Sources */,
+				69CD4F782D08ADB700478B98 /* Frameworks */,
+				69CD4F792D08ADB700478B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CD4F7D2D08ADB700478B98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				69CD4F7E2D08ADB700478B98 /* nooroTests */,
+			);
+			name = nooroTests;
+			packageProductDependencies = (
+			);
+			productName = nooroTests;
+			productReference = 69CD4F7B2D08ADB700478B98 /* nooroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69CD4F622D08ADB600478B98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					69CD4F692D08ADB600478B98 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					69CD4F7A2D08ADB700478B98 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 69CD4F692D08ADB600478B98;
+					};
+				};
+			};
+			buildConfigurationList = 69CD4F652D08ADB600478B98 /* Build configuration list for PBXProject "nooro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69CD4F612D08ADB600478B98;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 69CD4F6B2D08ADB600478B98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69CD4F692D08ADB600478B98 /* nooro */,
+				69CD4F7A2D08ADB700478B98 /* nooroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69CD4F682D08ADB600478B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CD4F9F2D08ADD100478B98 /* Preview Assets.xcassets in Resources */,
+				69CD4FA02D08ADD100478B98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CD4F792D08ADB700478B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69CD4F662D08ADB600478B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CD4FC42D08F58E00478B98 /* SessionView.swift in Sources */,
+				69CD4FB92D08B77100478B98 /* Cache.swift in Sources */,
+				69CD4FBD2D08BAE400478B98 /* WeatherService.swift in Sources */,
+				69CD4FC02D08EE5B00478B98 /* WeatherDetailView.swift in Sources */,
+				69CD4FB22D08B13300478B98 /* Color+Theme.swift in Sources */,
+				69CD4FB62D08B60B00478B98 /* SearchViewModel.swift in Sources */,
+				69CD4FB42D08B28800478B98 /* Color+Extension.swift in Sources */,
+				69CD4FB02D08B10400478B98 /* NColor.swift in Sources */,
+				69CD4FA82D08AE9500478B98 /* WeatherHomeView.swift in Sources */,
+				69CD4FBB2D08B97700478B98 /* WeatherData.swift in Sources */,
+				69CD4FA22D08ADD100478B98 /* nooroApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CD4F772D08ADB700478B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CD4F7D2D08ADB700478B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CD4F692D08ADB600478B98 /* nooro */;
+			targetProxy = 69CD4F7C2D08ADB700478B98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		69CD4F8D2D08ADB700478B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69CD4F8E2D08ADB700478B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		69CD4F902D08ADB700478B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nooro/nooro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nooro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perplexity.nooro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		69CD4F912D08ADB700478B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nooro/nooro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nooro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perplexity.nooro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		69CD4F932D08ADB700478B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perplexity.nooroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nooro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nooro";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		69CD4F942D08ADB700478B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perplexity.nooroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nooro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nooro";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69CD4F652D08ADB600478B98 /* Build configuration list for PBXProject "nooro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CD4F8D2D08ADB700478B98 /* Debug */,
+				69CD4F8E2D08ADB700478B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CD4F8F2D08ADB700478B98 /* Build configuration list for PBXNativeTarget "nooro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CD4F902D08ADB700478B98 /* Debug */,
+				69CD4F912D08ADB700478B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CD4F922D08ADB700478B98 /* Build configuration list for PBXNativeTarget "nooroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CD4F932D08ADB700478B98 /* Debug */,
+				69CD4F942D08ADB700478B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69CD4F622D08ADB600478B98 /* Project object */;
+}
