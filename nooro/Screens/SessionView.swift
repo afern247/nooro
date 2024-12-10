@@ -8,7 +8,7 @@
 import SwiftUI
 
 // The only reason why this "empty" view is here is because on the requirements you mentioned that you wanted dependency injection, this demostrates that.
-// I could delete this view and put it on the root, however it's not wise to do that do to performance.
+// I could delete this view and put it on the root, however it's not wise to do that for performance.
 struct SessionView: View {
     
     @StateObject private var viewModel = SearchViewModel()
