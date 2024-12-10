@@ -5,7 +5,7 @@ nooro iOS Take Home Test
 
 1. Clone the repo
 2. Open `nooro.xcodeproj`
-3. run
+3. Run
 
 ## Demo
 
